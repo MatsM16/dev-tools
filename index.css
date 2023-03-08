@@ -1,6 +1,13 @@
 body {
     margin: 0;
     font-family: monospace;
+
+    background-color: white;
+    color: black;
+    
+    --badge-bg: purple;
+    --badge-fg: white;
+    --link: purple;
 }
 
 header {
@@ -31,6 +38,15 @@ section > a {
     font-size: 16pt;
 }
 
+section > a:hover,
+section > a:focus {
+    color: var(--link);
+}
+
+section > a > label {
+    cursor: pointer;
+}
+
 section > a > img {
     width: 1.2em;
     height: 1.2em;
@@ -42,11 +58,23 @@ section > a > cite {
     font-size: 0.5em;
     padding: 2px 4px;
     font-style: normal;
-    background-color: purple;
+    background-color: var(--badge-bg);
     border-radius: 4px;
-    color: white;
+    color: var(--badge-fg);
 }
 
 .tool > label {
     font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: white;
+        
+        --badge-bg: rgb(155, 58, 155);
+        --badge-fg: white;
+
+        --link: rgb(155, 58, 155);
+    }
 }
