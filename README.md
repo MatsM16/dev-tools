@@ -6,7 +6,7 @@ The page is currently heavily influenced by my work-habits and school.
 ## Add
 Use this guide when adding new tools or extensions.
 1. Find a `<section>` in `index.html` matching the tool.  
-   If unable to find a appropriate section, create a new `<section>` in `<main>` using the template below.  
+   If unable to find a section, create a new `<section>` in `<main>` using the template below.  
    **Section template:**  
    ```html
    <section>
@@ -14,8 +14,8 @@ Use this guide when adding new tools or extensions.
 
    </section>
    ```
-2. Download an `png`-icon for the tool. Put the image in the `icons/`-folder.
-3. Add the appropriate template to the `<section>` from `step 1`.  
+2. Download a `png`-icon for the tool/extension and put it in the `icons/`-folder.
+3. Copy the template into the `<section>` from `step 1`.  
    **Tool template:**  
    ```html
    <a target="_blank" class="tool" href="{download-page}">
@@ -34,6 +34,6 @@ Use this guide when adding new tools or extensions.
 4. Replace template text with useful text.  
    `{download-page}`: Download page for tool.  
    `{extension-page}`: Page for extension. *(Must be easy to install from here)*.  
-   `{icon}`: Link to icon in `icons/`-folder. *(Must start with `icons/`)*.  
+   `{icon}`: Link to icon from `step 2`. *(Must start with `icons/`)*.  
    `{name}`: Name of tool/extension. *(Short if possible)*  
    `{tool-name}`: Name of tool extended by extension.
