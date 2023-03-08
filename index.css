@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+header {
+    padding-top: 1em;
+    font-size: 32pt;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    padding: 2em;
+    gap: 4em;
+}
+
+section > h1 {
+    margin: 0;
+    font-size: 24pt;
+}
+
+section > a {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16pt;
+}
+
+section > a > img {
+    width: 1.2em;
+    height: 1.2em;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+section > a > cite {
+    font-size: 0.5em;
+    padding: 2px 4px;
+    font-style: normal;
+    background-color: purple;
+    border-radius: 4px;
+    color: white;
+}
+
+.tool > label {
+    font-weight: bold;
+}
